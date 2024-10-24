@@ -14,6 +14,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{6405FC
 	ProjectSection(SolutionItems) = preProject
 		szamonkeresapi\Controllers\.gitignore = szamonkeresapi\Controllers\.gitignore
 		.gitignore = .gitignore
+		Dto.cs = Dto.cs
+		User.cs = User.cs
+		UserDbContext.cs = UserDbContext.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{5399D1F9-7864-4430-BE28-302345F55D38}"
+	ProjectSection(SolutionItems) = preProject
+		UserController.cs = UserController.cs
 	EndProjectSection
 EndProject
 Global
