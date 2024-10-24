@@ -1,20 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 namespace szamonkeresapi.Modles
+
 public class UserDbContext : DbContext
-{
-{
-        public UserDbContext() { }
-
-    public UserDbContext(DbContextOptions options) : base(options) { }
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        if (!optionsBuilder.IsConfigured)
-        {
-            string conn = "server=localhost; database=Users; user=root; password=";
+        public UserDbContext(DbContextOptions<UserDbContext> options) : base(options) { }
 
-            optionsBuilder.UseMySQL(conn);
-        }
+        public DbSet<User> mock_data { get; set; }
     }
-    public DbSet<User> NewUsers { get; set; } = null!;
+
 }
 }

@@ -2,14 +2,16 @@
 
 public class szamonkeresapi.Modles
 {
-	public User()
 
-	{
 
-               public Guid Id { get; set; }
-                 public string Title { get; set; }
-                    public string description { get; set; }
-               
-
+public class User
+{
+    public int Id { get; set; }
+    public string Title { get; set; }
+    public string Description { get; set; }
+    public DateTime CreatedTime { get; set; }
+    public DateTime LastUpdated { get; set; }
 }
+
+
 }
