@@ -1,0 +1,6 @@
+@szamonkeresapi_HostAddress = http://localhost:5285
+
+GET {{szamonkeresapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
